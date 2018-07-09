@@ -1,0 +1,42 @@
+#OurStory {
+  padding: 100px 0;
+  
+  .quote {
+    color: grey;
+    margin: 0.5rem 0 3rem;
+    strong {
+      color: #000;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+
+  .reserve-btn {
+    display: inline-block;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: $displayFont;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    &:hover {
+      background: orange;
+      color: #000;
+    }
+  }
+
+  .video-img {
+    max-width: 400px;
+    height: 550px;
+    background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/img/Springtime-Chicken-Noodle-Pho-1.jpg?raw=true") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: right;
+    margin: 0 auto;
+  }   
+
+}
