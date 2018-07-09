@@ -160,14 +160,18 @@ function TopImg(_ref) {
     "section",
     { "class": "TopImg" },
     (0, _hyperapp.h)(
-      "h5",
-      null,
-      "Welcome"
-    ),
-    (0, _hyperapp.h)(
-      "h1",
-      null,
-      "Taste Of Vietnam"
+      "div",
+      { "class": "title" },
+      (0, _hyperapp.h)(
+        "h5",
+        null,
+        "Welcome"
+      ),
+      (0, _hyperapp.h)(
+        "h1",
+        null,
+        "Taste Of Vietnam"
+      )
     ),
     (0, _hyperapp.h)(
       "div",
