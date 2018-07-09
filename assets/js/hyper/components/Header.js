@@ -1,6 +1,6 @@
 import {h, app} from 'hyperapp'
 
-export default function App({state, actions}) {
+export default function Header({state, actions}) {
   return (
     <header>
       <div class="logo">
