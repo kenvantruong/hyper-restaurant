@@ -44,9 +44,13 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(5);
+var _TopImg = __webpack_require__(6);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
+
+var _OurStory = __webpack_require__(5);
+
+var _OurStory2 = _interopRequireDefault(_OurStory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58,7 +62,8 @@ function App(_ref) {
     'div',
     { 'class': 'app' },
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -101,36 +106,40 @@ function Header(_ref) {
     null,
     (0, _hyperapp.h)(
       "div",
-      { "class": "logo" },
-      "Logo"
-    ),
-    (0, _hyperapp.h)(
-      "nav",
-      null,
+      { "class": "container" },
       (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Menu"
+        "div",
+        { "class": "logo" },
+        "Logo"
       ),
       (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Party Platters"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Locations"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Rewards"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Reservations"
+        "nav",
+        null,
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Menu"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Party Platters"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Locations"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Rewards"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reservations"
+        )
       )
     )
   );
@@ -140,6 +149,77 @@ function Header(_ref) {
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = OurStory;
+
+var _hyperapp = __webpack_require__(0);
+
+function OurStory(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "OurStory" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "row" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-6" },
+          (0, _hyperapp.h)(
+            "h5",
+            { "class": "comp-title" },
+            "Our Story"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "Cooking is the art of adjustment"
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            null,
+            "beard scenester fanny pack marfa authentic kitsch cold-pressed pop-up coloring book. Flexitarian typewriter fashion axe street art fixie. jianbing. Chillwave sustainable cornhole, cloud bread everyday carry put a bird on it waistcoat blog fanny pack edison bulb vegan."
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "quote" },
+            "\"Hands down the best Pho I ever had!\" - ",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Thomas Davis"
+            )
+          ),
+          (0, _hyperapp.h)(
+            "a",
+            { href: "#", "class": "reserve-btn" },
+            "Reserve"
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-6" },
+          (0, _hyperapp.h)("div", { "class": "video-img" })
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -158,50 +238,54 @@ function TopImg(_ref) {
 
   return (0, _hyperapp.h)(
     "section",
-    { "class": "TopImg" },
+    { id: "TopImg" },
     (0, _hyperapp.h)(
       "div",
-      { "class": "title" },
-      (0, _hyperapp.h)(
-        "h5",
-        null,
-        "Welcome"
-      ),
-      (0, _hyperapp.h)(
-        "h1",
-        null,
-        "Taste Of Vietnam"
-      )
-    ),
-    (0, _hyperapp.h)(
-      "div",
-      { "class": "contact-info" },
+      { "class": "container" },
       (0, _hyperapp.h)(
         "div",
-        { "class": "booking" },
-        "Contact Us"
-      ),
-      (0, _hyperapp.h)(
-        "h2",
-        null,
-        "(718) 899 - 8674"
+        { "class": "title" },
+        (0, _hyperapp.h)(
+          "h5",
+          null,
+          "Welcome"
+        ),
+        (0, _hyperapp.h)(
+          "h1",
+          null,
+          "Taste Of Vietnam"
+        )
       ),
       (0, _hyperapp.h)(
         "div",
-        { "class": "hours" },
-        "Opening Hours ",
+        { "class": "contact-info" },
         (0, _hyperapp.h)(
-          "strong",
-          null,
-          "Mon - Fri: "
+          "div",
+          { "class": "booking" },
+          "Contact Us"
         ),
-        " 9am - 11pm",
         (0, _hyperapp.h)(
-          "strong",
+          "h2",
           null,
-          " Weekend: "
+          "(718) 899 - 8674"
         ),
-        " 9am - 3am"
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "hours" },
+          "Opening Hours ",
+          (0, _hyperapp.h)(
+            "strong",
+            null,
+            "Mon - Fri: "
+          ),
+          " 9am - 11pm",
+          (0, _hyperapp.h)(
+            "strong",
+            null,
+            " Weekend: "
+          ),
+          " 9am - 3am"
+        )
       )
     )
   );
@@ -210,7 +294,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -252,4 +336,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[6]);
+],[7]);
