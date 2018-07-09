@@ -3,7 +3,16 @@ import {h, app} from 'hyperapp'
 export default function App({state, actions}) {
   return (
     <header>
-      Header comp
+      <div class="logo">
+        Logo
+      </div>
+      <nav>
+        <a href="#">Menu</a>
+        <a href="#">Party Platters</a>
+        <a href="#">Locations</a>
+        <a href="#">Rewards</a>
+        <a href="#">Reservations</a>
+      </nav>
     </header>
   )
 }

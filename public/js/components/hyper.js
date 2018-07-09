@@ -92,9 +92,42 @@ function App(_ref) {
       actions = _ref.actions;
 
   return (0, _hyperapp.h)(
-    'header',
+    "header",
     null,
-    'Header comp'
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "logo" },
+      "Logo"
+    ),
+    (0, _hyperapp.h)(
+      "nav",
+      null,
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Menu"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Party Platters"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Locations"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Rewards"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Reservations"
+      )
+    )
   );
 }
 // <Header state={state} actions={actions}/>
