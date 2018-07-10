@@ -13,12 +13,14 @@ export default function TopImg({state, actions}) {
             </h1>
       </div>
       <div class="contact-info">
+        <div class="container">
               <div class="booking">Contact Us</div>
-              <h2>(718) 899 - 8674</h2>
-              <div class="hours">
-                Opening Hours <strong>Mon - Fri: </strong> 9am - 11pm 
-                <strong> Weekend: </strong> 9am - 3am
+                <h2>(718) 899 - 8674</h2>
+                <div class="hours">
+                  Opening Hours <strong>Mon - Fri: </strong> 9am - 11pm 
+                  <strong> Weekend: </strong> 9am - 3am
               </div>
+        </div>              
       </div>
     </div>
     </section>

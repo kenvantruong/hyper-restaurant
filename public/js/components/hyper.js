@@ -112,11 +112,7 @@ function Header(_ref) {
     (0, _hyperapp.h)(
       "div",
       { "class": "container" },
-      (0, _hyperapp.h)(
-        "div",
-        { "class": "logo" },
-        "Logo"
-      ),
+      (0, _hyperapp.h)("div", { "class": "logo" }),
       (0, _hyperapp.h)(
         "nav",
         null,
@@ -138,7 +134,7 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Rewards"
+          "Contest"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -190,12 +186,12 @@ function OurStory(_ref) {
           (0, _hyperapp.h)(
             "h2",
             null,
-            "Cooking is the art of adjustment"
+            "Traditional made perfect for your taste buds."
           ),
           (0, _hyperapp.h)(
             "p",
             null,
-            "beard scenester fanny pack marfa authentic kitsch cold-pressed pop-up coloring book. Flexitarian typewriter fashion axe street art fixie. jianbing. Chillwave sustainable cornhole, cloud bread everyday carry put a bird on it waistcoat blog fanny pack edison bulb vegan."
+            "Taste Of Vietnam offers a modern Vietnamese dining experience. The restaurant brings a combination of chef driven menu and warm California spirit by using fresh local produce and ingredients. Our chef applies authentic Vietnamese flavors and techniques that allow the ingredients to be expressed without boundaries."
           ),
           (0, _hyperapp.h)(
             "div",
@@ -283,7 +279,7 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
               "p",
               { "class": "details" },
-              "Famous Beef Rice Noodle Soup - Includes Beef, Onions, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles"
+              "Famous Beef Rice Noodle Soup - Includes Beef or Chicken, Onions, Sugar, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles"
             )
           )
         ),
@@ -337,14 +333,14 @@ function SpecialMenu(_ref) {
             (0, _hyperapp.h)(
               "p",
               { "class": "details" },
-              "Vietnamese Lemon Grass Beef with Rice Noodles - Includes Meat Balls or Sirloin Steak, Ground black pepper, Garlic, Sugar, Sprouts, Fish sauce, and Rice Noodles"
+              "Vietnamese Lemon Grass Chicken with Rice Noodles - Includes Chicken, Meat Balls or Sirloin Steak, Sugar, Sprouts, Fish sauce, and Rice Noodles"
             )
           )
         )
       ),
       (0, _hyperapp.h)(
         "a",
-        { href: "#" },
+        { href: "#", "class": "link" },
         "View Full Menu"
       )
     )
@@ -396,30 +392,34 @@ function TopImg(_ref) {
         { "class": "contact-info" },
         (0, _hyperapp.h)(
           "div",
-          { "class": "booking" },
-          "Contact Us"
-        ),
-        (0, _hyperapp.h)(
-          "h2",
-          null,
-          "(718) 899 - 8674"
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "hours" },
-          "Opening Hours ",
+          { "class": "container" },
           (0, _hyperapp.h)(
-            "strong",
-            null,
-            "Mon - Fri: "
+            "div",
+            { "class": "booking" },
+            "Contact Us"
           ),
-          " 9am - 11pm",
           (0, _hyperapp.h)(
-            "strong",
+            "h2",
             null,
-            " Weekend: "
+            "(718) 899 - 8674"
           ),
-          " 9am - 3am"
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "hours" },
+            "Opening Hours ",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Mon - Fri: "
+            ),
+            " 9am - 11pm",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              " Weekend: "
+            ),
+            " 9am - 3am"
+          )
         )
       )
     )

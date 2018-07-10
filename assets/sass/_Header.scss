@@ -7,9 +7,22 @@ header {
 
   .logo {
     display: inline-block;
-    padding: 20px 10px;
-
+      width: 80px;
+      height: 80px;
+      padding: 20px 10px;
+    .logo-img {
+      width: 100%;
+      height: 80px;
+      background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/img/pho_icon.png?raw=true") no-repeat center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  
+    }
   }
+
+  
 
     nav {
       display: inline-block;

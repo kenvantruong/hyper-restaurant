@@ -6,6 +6,13 @@
   -o-background-size: cover;
   background-size: cover;
 
+
+  .container {
+      .comp-title {
+      padding-bottom: 25px;
+    }
+  }
+
   h2, h5 {
     text-align: center;
   }
@@ -36,7 +43,7 @@
       margin-bottom: 75px;
     }
     .box-img-three {
-      background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/pho-img/bun-bowl.jpg?raw=true") no-repeat center; 
+      background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/pho-img/VIETNAMESE%20NOODLES_WITH_LEMONGRASS_CHICKEN.png?raw=true") no-repeat center; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -75,9 +82,20 @@
       font-weight: 300;
       font-size: .8rem;
       text-align: center;
-      line-height: 1.5;
+      line-height: 1.8;
+      margin: 30px 0px;
     }
-
   }
 
+  .boxes {
+    padding-bottom: 50px;
+  }
+
+  a.link {
+    color: #000;
+    font-family: $displayFont;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
 }

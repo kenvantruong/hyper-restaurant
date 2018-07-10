@@ -13,7 +13,7 @@ export default function SpecialMenu({state, actions}) {
               <div class="price-circle">$10</div>
               </div>
               <span class="title">Phở đặc Biệt #1</span>
-              <p class="details">Famous Beef Rice Noodle Soup - Includes Beef, Onions, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles</p>
+              <p class="details">Famous Beef Rice Noodle Soup - Includes Beef or Chicken, Onions, Sugar, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -31,11 +31,11 @@ export default function SpecialMenu({state, actions}) {
               <div class="price-circle">$15</div>
               </div>
               <span class="title">Bún Bò Xào #12</span>
-              <p class="details">Vietnamese Lemon Grass Beef with Rice Noodles - Includes Meat Balls or Sirloin Steak, Ground black pepper, Garlic, Sugar, Sprouts, Fish sauce, and Rice Noodles</p>
+              <p class="details">Vietnamese Lemon Grass Chicken with Rice Noodles - Includes Chicken, Meat Balls or Sirloin Steak, Sugar, Sprouts, Fish sauce, and Rice Noodles</p>
             </div>
           </div>
         </div>
-        <a href="#">View Full Menu</a>
+        <a href="#" class="link">View Full Menu</a>
       </div>
     </section>
   )
