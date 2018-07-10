@@ -44,7 +44,7 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(7);
+var _TopImg = __webpack_require__(9);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
@@ -52,9 +52,17 @@ var _OurStory = __webpack_require__(5);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(6);
+var _SpecialMenu = __webpack_require__(8);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
+var _RandomQuote = __webpack_require__(6);
+
+var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
+
+var _Reviews = __webpack_require__(7);
+
+var _Reviews2 = _interopRequireDefault(_Reviews);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68,7 +76,9 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -229,6 +239,129 @@ function OurStory(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = RandomQuote;
+
+var _hyperapp = __webpack_require__(0);
+
+function RandomQuote(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "RandomQuote" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "h1",
+        null,
+        "\"The secret ingredient is always love.\""
+      ),
+      (0, _hyperapp.h)(
+        "span",
+        { "class": "author" },
+        "- Johnny -"
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Reviews;
+
+var _hyperapp = __webpack_require__(0);
+
+function Reviews(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "Reviews" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "row" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-8" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "side-img" },
+            (0, _hyperapp.h)("img", { src: "https://github.com/kenvantruong/hyper-restaurant/blob/master/public/img/chef-ken.jpg?raw=true" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-4" },
+          (0, _hyperapp.h)(
+            "h5",
+            { "class": "comp-title" },
+            "REVIEWS"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "MasterChef Of Vietnam"
+          ),
+          (0, _hyperapp.h)(
+            "h4",
+            null,
+            "\"Best Pho Restaurant in San Francisco area!\""
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            null,
+            "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "author" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Dom Ramsey"
+            ),
+            " - Winner of Iron Chef 2017"
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "arrows" },
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left", "aria-hidden": "true" }),
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right ready", "aria-hidden": "true" })
+          )
+        )
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = SpecialMenu;
 
 var _hyperapp = __webpack_require__(0);
@@ -350,7 +483,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -429,7 +562,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -471,4 +604,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[8]);
+],[10]);

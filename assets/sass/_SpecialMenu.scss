@@ -1,11 +1,6 @@
 #SpecialMenu {
   padding: 100px 0;
-  background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/pho-img/phobo_vietnam_custom_clean.jpg?raw=true") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+  background: url("  https://github.com/kenvantruong/hyper-restaurant/blob/master/public/img/grey-box-bg.jpg?raw=true") repeat;
 
   .container {
       .comp-title {
@@ -16,7 +11,6 @@
   h2, h5 {
     text-align: center;
   }
-
   .box {
     background: #fff;
     padding: 20px;
@@ -42,6 +36,7 @@
       position: relative;
       margin-bottom: 75px;
     }
+    
     .box-img-three {
       background: url("https://github.com/kenvantruong/hyper-restaurant/blob/master/public/pho-img/VIETNAMESE%20NOODLES_WITH_LEMONGRASS_CHICKEN.png?raw=true") no-repeat center; 
       -webkit-background-size: cover;
