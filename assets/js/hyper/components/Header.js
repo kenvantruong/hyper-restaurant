@@ -8,11 +8,11 @@ export default function Header({state, actions}) {
           {/* <div class="logo-img"></div> */}
         </div>
         <nav>
-          <a href="#">Menu</a>
-          <a href="#">Party Platters</a>
-          <a href="#">Locations</a>
-          <a href="#">Contest</a>
+          <a href="#">Home</a>
+          <a href="#">Reviews</a>
+          <a href="#">Special Menu</a>
           <a href="#">Reservations</a>
+          <a href="#">Contact Us</a>
         </nav>
       </div>
     </header>

@@ -5,6 +5,11 @@ import OurStory from './OurStory.js'
 import SpecialMenu from './SpecialMenu.js'
 import RandomQuote from './RandomQuote.js'
 import Reviews from './Reviews.js'
+import ContactUs from './ContactUs.js'
+import Map from './Map.js'
+import Footer from './Footer.js'
+
+
 
 
 
@@ -20,6 +25,11 @@ export default function App({state, actions}) {
       <SpecialMenu state={state} actions={actions}/>
       <RandomQuote state={state} actions={actions}/>
       <Reviews state={state} actions={actions}/>
+      <ContactUs state={state} actions={actions}/>
+      <Map state={state} actions={actions}/>
+      <Footer state={state} actions={actions}/>
+
+
 
 
     </div>
