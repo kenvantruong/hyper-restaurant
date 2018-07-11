@@ -9,7 +9,7 @@ export default function TopImg({state, actions}) {
               Welcome
             </h5>
             <h1>
-              Taste Of Vietnam
+              {state.companyInfo.title}
             </h1>
       </div>
       <div class="contact-info">
