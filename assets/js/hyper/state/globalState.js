@@ -28,49 +28,77 @@ var specialMenuData = [
 ]
 
 
+// ---------Random Quote------------
+var randomQuoteData = [
+  {
+    author: '- Johnny -',
+    quote: '"The Secret Ingredient Is Always Love."'
+  },
+  {
+    author: '- Ashley -',
+    quote: '"First we eat, then we do everything else."'
+  },
+  {
+    author: '- Ramya -',
+    quote: '"Food is an important part of a balanced diet."'
+  },
+  {
+    author: '- Katie -',
+    quote: '"Food is like sex: When you abstain, even the worst stuff begins to look good."'
+  }
+]
+
+
 // ---------REVIEWS------------
 
-var reviews = [
+var reviewsData = [
   {
     company: "MasterChef Of Vietnam",
     author: "Dom Ramsey",
-    authorInfo: "- Winner of Iron Chef 2017",
+    authorInfo: " - Winner of Iron Chef 2017",
     hightlight: '"Best Pho Restaurant in San Francisco area!"',
     review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
   },
   {
     company: "China Food Network",
     author: "Chef Lee",
-    authorInfo: "- Grand Master Chef of Shanghai",
+    authorInfo: " - Grand Master Chef of Shanghai",
     hightlight: '"Hands down, most delicious flavored Pho ever!"',
-    review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+    review: "Adaptogen tumeric cray fanny pack, photo booth chillwave gastropub subway tile shoreditch butcher poke. Fashion axe venmo tote bag pork belly keffiyeh 3 wolf moon. "
   },
   {
     company: "America Got Taste",
     author: "Bill James",
-    authorInfo: "- Top 4 Best Contestant",
+    authorInfo: " - Top 4 Best Contestant",
     hightlight: '"OMG Highly reccommended!"',
-    review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+    review: "Cardigan keffiyeh cronut four dollar toast, fanny pack cred hoodie knausgaard forage microdosing schlitz next level iPhone williamsburg. Truffaut kogi tousled gochujang fingerstache banjo."
   },
   {
     company: "New York Best Diner",
     author: "Dr. Chef Jeff Rogan",
-    authorInfo: "- World Class Champion of 5 Star Restaurant",
+    authorInfo: " - World Class Champion of 5 Star Restaurant",
     hightlight: '"It taste like heaven! tropical rain forest in Vietnam. Wow!"',
-    review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+    review: "Drinking vinegar trust fund you probably haven't heard of them affogato meditation kinfolk. Hexagon vape lyft, kombucha pug tofu chia ennui gochujang."
   },
   {
     company: "HBO Sneak Peek",
     author: "Krissy Nguyen",
-    authorInfo: "- Best of the best Judge for American's Best Food",
+    authorInfo: " - Best of the best Judge for American's Best Food",
     hightlight: '"OMG all my girl friends come here for our birthdays! are you serious!?!"',
-    review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+    review: "Cred meggings vexillologist ethical, schlitz forage woke. +1 mlkshk succulents franzen. Meditation retro williamsburg irony. "
   },
 ]
+
+
+
 
 export const globalState = {
   count: 0,
   companyInfo,
   specialMenuData,
-  reviews
+  reviewsData,
+  randomQuoteData,
+  reviewStatus: {
+    currentReview: 0,
+  }
 }
