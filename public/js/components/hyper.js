@@ -113,13 +113,31 @@ Object.defineProperty(exports, "__esModule", {
 
 var companyInfo = {
   title: 'TASTE OF VIETNAM',
-  phone: '(718) 899 - 8674',
+  phone: '(715) 899 - 8674',
   location: 'San Francisco, United States'
 };
 
+var specialMenuData = [{
+  title: "Phở đặc Biệt #1",
+  description: "Famous Beef Rice Noodle Soup - Includes Beef or Chicken, Onions, Sugar, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles",
+  price: "10",
+  img: "box-img-one"
+}, {
+  title: "Bún Bò Huế #37",
+  description: "Hue Village Special Rice Noodle Soup - Includes Oxtail, Beef, Pork, Red pepper flakes, Garlic, Annatto seeds, Fish sauce, Shrimp paste",
+  price: "12",
+  img: "box-img-two"
+}, {
+  title: "Bún Bò Xào #12",
+  description: "Vietnamese Lemon Grass Chicken with Rice Noodles - Includes Chicken, Sirloin Steak, Sugar, Sprouts, Fish sauce",
+  price: "15",
+  img: "box-img-three"
+}];
+
 var globalState = exports.globalState = {
   count: 0,
-  companyInfo: companyInfo
+  companyInfo: companyInfo,
+  specialMenuData: specialMenuData
 };
 
 /***/ }),
@@ -168,12 +186,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "San Francisco, ",
-              (0, _hyperapp.h)(
-                "span",
-                null,
-                "United States"
-              )
+              state.companyInfo.location
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -211,7 +224,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "(718) 899 - 8674"
+              state.companyInfo.phone
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -372,6 +385,7 @@ exports.default = Header;
 
 var _hyperapp = __webpack_require__(0);
 
+// /* <div class="logo-img"></div> */
 function Header(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
@@ -661,6 +675,41 @@ function SpecialMenu(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+
+  var loopMenu = function loopMenu() {
+    return state.specialMenuData.map(function (item) {
+      console.log(item.title);
+      return (0, _hyperapp.h)(
+        "div",
+        { "class": "col-md-4" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "box" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": item.img },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "price-circle" },
+              "$",
+              item.price
+            )
+          ),
+          (0, _hyperapp.h)(
+            "span",
+            { "class": "title" },
+            item.title
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "details" },
+            item.description
+          )
+        )
+      );
+    });
+  };
+
   return (0, _hyperapp.h)(
     "section",
     { id: "SpecialMenu" },
@@ -680,87 +729,7 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "div",
         { "class": "row" },
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img-one" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$10"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Ph\u1EDF \u0111\u1EB7c Bi\u1EC7t #1"
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Famous Beef Rice Noodle Soup - Includes Beef or Chicken, Onions, Sugar, Ginger, Salt, Star anise, Fish sauce, and Rice Noodles"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img-two" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$12"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "B\xFAn B\xF2 Hu\u1EBF #37"
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Hue Village Special Rice Noodle Soup - Includes Oxtail, Beef, Pork, Red pepper flakes, Garlic, Annatto seeds, Fish sauce, Shrimp paste"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img-three" },
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$15"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "B\xFAn B\xF2 X\xE0o #12"
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Vietnamese Lemon Grass Chicken with Rice Noodles - Includes Chicken, Meat Balls or Sirloin Steak, Sugar, Sprouts, Fish sauce, and Rice Noodles"
-            )
-          )
-        )
+        loopMenu()
       ),
       (0, _hyperapp.h)(
         "a",

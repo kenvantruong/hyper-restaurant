@@ -1,11 +1,11 @@
 import {h, app} from 'hyperapp'
-
+// /* <div class="logo-img"></div> */
 export default function Header({state, actions}) {
   return (
     <header>
       <div class="container">
         <div class="logo">
-          {/* <div class="logo-img"></div> */}
+          
         </div>
         <nav>
           <a href="#">Home</a>
