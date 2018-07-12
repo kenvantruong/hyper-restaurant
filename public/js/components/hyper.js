@@ -134,10 +134,45 @@ var specialMenuData = [{
   img: "box-img-three"
 }];
 
+// ---------REVIEWS------------
+
+var reviews = [{
+  company: "MasterChef Of Vietnam",
+  author: "Dom Ramsey",
+  authorInfo: "- Winner of Iron Chef 2017",
+  hightlight: '"Best Pho Restaurant in San Francisco area!"',
+  review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+}, {
+  company: "China Food Network",
+  author: "Chef Lee",
+  authorInfo: "- Grand Master Chef of Shanghai",
+  hightlight: '"Hands down, most delicious flavored Pho ever!"',
+  review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+}, {
+  company: "America Got Taste",
+  author: "Bill James",
+  authorInfo: "- Top 4 Best Contestant",
+  hightlight: '"OMG Highly reccommended!"',
+  review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+}, {
+  company: "New York Best Diner",
+  author: "Dr. Chef Jeff Rogan",
+  authorInfo: "- World Class Champion of 5 Star Restaurant",
+  hightlight: '"It taste like heaven! tropical rain forest in Vietnam. Wow!"',
+  review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+}, {
+  company: "HBO Sneak Peek",
+  author: "Krissy Nguyen",
+  authorInfo: "- Best of the best Judge for American's Best Food",
+  hightlight: '"OMG all my girl friends come here for our birthdays! are you serious!?!"',
+  review: "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+}];
+
 var globalState = exports.globalState = {
   count: 0,
   companyInfo: companyInfo,
-  specialMenuData: specialMenuData
+  specialMenuData: specialMenuData,
+  reviews: reviews
 };
 
 /***/ }),
@@ -631,7 +666,7 @@ function Reviews(_ref) {
           (0, _hyperapp.h)(
             "p",
             null,
-            "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha."
+            "Vaporware sustainable mlkshk af hammock distillery selfies marfa narwhal. Cliche semiotics health goth, blog cred lumbersexual mumblecore celiac kitsch lo-fi sriracha.\""
           ),
           (0, _hyperapp.h)(
             "div",
