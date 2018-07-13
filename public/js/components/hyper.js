@@ -630,9 +630,94 @@ function RandomQuote(_ref) {
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: Unexpected token (13:40)\n\n  11 |         <div class=\"author\"><strong>{state.reviewsData[state.reviewStatus.currentReview].author}</strong>{state.reviewsData[state.reviewStatus.currentReview].authorInfo}</div>\n  12 |         <div class=\"arrows\">\n> 13 |           <i class={`fa fa-arrow-left ${}`} aria-hidden=\"true\"></i>\n     |                                         ^\n  14 |           <i class={`fa fa-arrow-right ready`} aria-hidden=\"true\"></i>\n  15 |         </div>\n  16 |     </div>\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Reviews;
+
+var _hyperapp = __webpack_require__(0);
+
+function Reviews(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  var currentReview = function currentReview() {
+    return (0, _hyperapp.h)(
+      "div",
+      null,
+      (0, _hyperapp.h)(
+        "h5",
+        { "class": "comp-title" },
+        "REVIEWS"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].company
+      ),
+      (0, _hyperapp.h)(
+        "h4",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].highlight
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].review
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "author" },
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          state.reviewsData[state.reviewStatus.currentReview].author
+        ),
+        state.reviewsData[state.reviewStatus.currentReview].authorInfo
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "arrows" },
+        (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
+        (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right ready " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
+      )
+    );
+  };
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "Reviews" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "row" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-8" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "side-img" },
+            (0, _hyperapp.h)("img", { src: "https://github.com/kenvantruong/hyper-restaurant/blob/master/public/img/chef-ken.jpg?raw=true" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "col-md-4" },
+          currentReview()
+        )
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
 
 /***/ }),
 /* 11 */
