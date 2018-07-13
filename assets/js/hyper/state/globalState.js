@@ -86,7 +86,7 @@ var reviewsData = [
     authorInfo: " - Best of the best Judge for American's Best Food",
     hightlight: '"OMG all my girl friends come here for our birthdays! are you serious!?!"',
     review: "Cred meggings vexillologist ethical, schlitz forage woke. +1 mlkshk succulents franzen. Meditation retro williamsburg irony. "
-  },
+  }
 ]
 
 
